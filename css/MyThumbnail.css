@@ -1,0 +1,13 @@
+.myPic
+{
+	margin:5px;
+	border-radius:1px;
+	border:1px solid #ccc;
+}
+
+.jquery {
+	margin: 50px auto;
+	width: 1200px;
+	display: block;
+	overflow: hidden;
+}
