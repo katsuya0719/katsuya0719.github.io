@@ -29,10 +29,10 @@
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content=""/>
 
-  <title>Katsuya Obara &ndash; Sketches</title>
+  <title>Katsuya Obara &ndash; Map</title>
 
 
-  <link rel="stylesheet" href="/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" type="text/css" />
 </head>
 <body>
   <aside>
@@ -80,18 +80,15 @@
 
 <article class="single">
   <header>
-    <h1 id="sketches">Sketches</h1>
+    <h1 id="map">Map</h1>
   </header>
   <div>
-    <p>Upload sketches randomly...  </p>
-<p><a href="/images/house.jpg" rel="lightbox[sketch]"> <img src="/images/house.jpg" height="250px" alt="thumbnail"></a> 
-<a href="/images/wsbe1.jpg" rel="lightbox[sketch]"> <img src="/images/wsbe1.jpg" height="250px" alt="thumbnail"></a> 
-<a href="/images/wsbe2.jpg" rel="lightbox[sketch]"> <img src="/images/wsbe2.jpg" height="250px" alt="thumbnail"></a> 
-<a href="/images/mech1.jpg" rel="lightbox[sketch]"> <img src="/images/mech1.jpg" height="250px" alt="thumbnail"></a>
-<a href="/images/mech2.jpg" rel="lightbox[sketch]"> <img src="/images/mech2.jpg" height="250px" alt="thumbnail"></a> 
-<a href="/images/env1.jpg" rel="lightbox[sketch]"> <img src="/images/env1.jpg" height="250px" alt="thumbnail"></a> 
-<a href="/images/mech3.jpg" rel="lightbox[sketch]"> <img src="/images/mech3.jpg" height="250px" alt="thumbnail"></a> 
-<a href="/images/plumb1.jpg" rel="lightbox[sketch]"> <img src="/images/plumb1.jpg" height="250px" alt="thumbnail"></a> </p>
+    <p>Places where I have been to  </p>
+<div id="mapid" style="width: 900px; height: 600px"></div>
+
+<div id="place"></div>
+
+<div id="link"></div>
   </div>
 
 </article>
@@ -141,7 +138,8 @@
 </script>
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/lightbox.js"></script>
-<script src="/js/util.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://npmcdn.com/leaflet.path.drag/src/Path.Drag.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="/js/leaflet.js"></script>
 </html>
